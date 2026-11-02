@@ -115,6 +115,7 @@ export default function App() {
             <Link to="/#about">About Us</Link>
             <Link to="/#contact">Contact Us</Link>
           </div>
+          <h6>gears</h6>
           <div>
             <h4>Solutions</h4>
             <span>Power Transmission</span>
@@ -122,6 +123,7 @@ export default function App() {
             <span>Shaft-Hub Connections</span>
             <span>Industrial Gearboxes</span>
           </div>
+          
           <div>
             <h4>Contact Details</h4>
             <span><strong>M.A. Choudary</strong></span>
