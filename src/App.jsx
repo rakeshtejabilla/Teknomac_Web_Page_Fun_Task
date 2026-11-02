@@ -3,6 +3,7 @@ import { Icon, Link } from './components/Shared';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Industries from './pages/Industries';
+import Deals from './pages/Deals';
 import { productBrands } from './data/productsData';
 
 export default function App() {
@@ -22,6 +23,8 @@ export default function App() {
     page = <Products />;
   } else if (currentPath === '/industries') {
     page = <Industries />;
+  } else if (currentPath === '/deals') {
+    page = <Deals />;
   } else {
     page = <Home />;
   }
@@ -76,6 +79,7 @@ export default function App() {
               </div>
             </div>
 
+            <Link to="/deals" onClick={() => setMenu(false)}>Deals</Link>
             <Link to="/industries" onClick={() => setMenu(false)}>Industries</Link>
             <Link to="/#about" onClick={() => setMenu(false)}>About</Link>
             <Link to="/#contact" onClick={() => setMenu(false)}>Contact</Link>
@@ -106,6 +110,7 @@ export default function App() {
           <div>
             <h4>Explore</h4>
             <Link to="/products">Products</Link>
+            <Link to="/deals">Deals</Link>
             <Link to="/industries">Industries</Link>
             <Link to="/#about">About Us</Link>
             <Link to="/#contact">Contact Us</Link>
